@@ -38,11 +38,6 @@
 # include <machine/floatingpoint.h>
 #endif
 
-// Ugliy hack to get rid of linker error 
-#if defined(ARDUINO) && defined(ESP32) 
-struct _reent *_impure_ptr __ATTRIBUTE_IMPURE_PTR__ = NULL;
-#endif
-
 /***********************************************************************
 *
 *  Global Function Definitions
